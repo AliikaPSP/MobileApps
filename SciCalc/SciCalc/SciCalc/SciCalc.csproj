@@ -66,4 +66,10 @@
 	  <Folder Include="Resources\Fonts\" />
 	</ItemGroup>
 
+	<ItemGroup>
+	  <MauiXaml Update="Views\CalculatorPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	</ItemGroup>
+
 </Project>
