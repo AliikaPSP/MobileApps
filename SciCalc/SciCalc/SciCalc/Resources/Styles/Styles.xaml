@@ -21,7 +21,7 @@
     </Style>
     
     <!--button styles-->
-    <Style TargetType="Button" x:Key="NumberedButtonStyle">
+    <Style TargetType="Button" x:Key="NumberButtonStyle">
         <Setter Property="FontSize" Value="22" />
         <Setter Property="FontFamily" Value="RegularFont" />
         <Setter Property="TextColor" Value="White" />
