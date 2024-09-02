@@ -396,8 +396,6 @@
             Command="{Binding BackspaceCommand}"
             CommandParameter="⌫"/>
 
-
-
-
     </Grid>
 </ContentPage>
+    
