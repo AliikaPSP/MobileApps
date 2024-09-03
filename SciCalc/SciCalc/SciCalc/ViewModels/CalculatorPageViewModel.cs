@@ -9,10 +9,11 @@ using System.Threading.Tasks;
 namespace SciCalc.ViewModels
 {
     [INotifyPropertyChanged]
-    internal partial class CalculatorPageViewModel
+    internal partial class CalculatorPageViewModel /*ObservableObject*/
     {
         [ObservableProperty]
         private string inputText = string.Empty;
+
         [ObservableProperty]
         private string calculatedResult = "0";
         
