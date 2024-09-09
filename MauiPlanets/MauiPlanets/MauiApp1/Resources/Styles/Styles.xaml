@@ -16,7 +16,7 @@
         <Setter Property="BorderWidth" Value="0" />
         <Setter Property="BorderColor" Value="{StaticResource BorderColor}" />
     </Style>
-    
+
     <!--Label Styles-->
     <Style TargetType="Label" x:Key="BaseBoldLabelStyle">
         <Setter Property="LineBreakMode" Value="TailTruncation" />
@@ -24,7 +24,7 @@
         <Setter Property="FontFamily" Value="BoldFont" />
     </Style>
 
-    <Style TargetType="Label" x:Key="BaseRegulalStyle">
+    <Style TargetType="Label" x:Key="BaseRegularLabelStyle">
         <Setter Property="LineBreakMode" Value="TailTruncation" />
         <Setter Property="FontAutoScalingEnabled" Value="False" />
         <Setter Property="FontFamily" Value="RegularFont" />

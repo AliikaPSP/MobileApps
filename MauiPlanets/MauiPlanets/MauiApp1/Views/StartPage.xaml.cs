@@ -33,6 +33,6 @@ public partial class StartPage : ContentPage
 
         parentAnimation.Commit(this, "TransitionAnimation", 16, 3000, null, null);
     }
-    //async void ExploreNow_Clicked(System.Object sender, System.EventArgs e)
-    //    => Application.Current.MainPage = new NavigationPage(new PlanetsPage());
+        async void ExploreNow_Clicked(System.Object sender, System.EventArgs e)
+        => Application.Current.MainPage = new NavigationPage(new PlanetsPage());
 }

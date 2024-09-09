@@ -132,7 +132,7 @@
                     Style="{StaticResource IntroPageTextStyle}"
                     Text="Want to know and explain all things about the planets in the Solar system?" />
 
-                <Label
+                <Button
                     Style="{StaticResource ButtonStyle}"
                     Text="Explore Now"
                     HorizontalOptions="Center"
