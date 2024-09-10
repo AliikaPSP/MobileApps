@@ -2,13 +2,13 @@ namespace MauiApp1.Views;
 
 public partial class StartPage : ContentPage
 {
-	public StartPage()
-	{
-		InitializeComponent();
-	}
+    public StartPage()
+    {
+        InitializeComponent();
+    }
 
     protected override async void OnAppearing()
-	{
+    {
         base.OnAppearing();
 
         if (this.AnimationIsRunning("TransitionAnimation"))
@@ -33,6 +33,7 @@ public partial class StartPage : ContentPage
 
         parentAnimation.Commit(this, "TransitionAnimation", 16, 3000, null, null);
     }
-        async void ExploreNow_Clicked(System.Object sender, System.EventArgs e)
+
+    async void ExploreNow_Clicked(System.Object sender, System.EventArgs e)
         => Application.Current.MainPage = new NavigationPage(new PlanetsPage());
 }
