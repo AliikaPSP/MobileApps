@@ -1,4 +1,5 @@
-﻿namespace MauiApp1.Models
+﻿using System;
+namespace MauiApp1.Models
 {
     public class Planet
     {

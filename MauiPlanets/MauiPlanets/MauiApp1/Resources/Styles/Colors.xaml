@@ -13,5 +13,6 @@
     <Color x:Key="LightTextColor">#d5d5d5</Color>
     <Color x:Key="PageBackgroundColor">#191932</Color>
     <Color x:Key="LightBackgroundColor">#d5d5d5</Color>
+    <Color x:Key="LightBorderColor">#d5d5d5</Color>
     
 </ResourceDictionary>

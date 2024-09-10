@@ -1,3 +1,7 @@
+using MauiApp1.Models;
+using MauiApp1.Services;
+using Microsoft.Maui.Controls;
+
 namespace MauiApp1.Views;
 
 public partial class PlanetsPage : ContentPage

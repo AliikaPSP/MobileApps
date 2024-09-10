@@ -34,6 +34,26 @@ public partial class StartPage : ContentPage
         parentAnimation.Commit(this, "TransitionAnimation", 16, 3000, null, null);
     }
 
+    //async void ExploreNow_Clicked(System.Object sender, System.EventArgs e)
+    //{
+    //    await DisplayAlert("Navigation", "Navigating to Planets Page", "OK");
+
+    //    if (Navigation != null)
+    //    {
+    //        try
+    //        {
+    //            await Navigation.PushAsync(new PlanetsPage());
+    //        }
+    //        catch (Exception ex)
+    //        {
+    //            await DisplayAlert("Error", $"Exception: {ex.Message}", "OK");
+    //        }
+    //    }
+    //    else
+    //    {
+    //        await DisplayAlert("Error", "Navigation is not available.", "OK");
+    //    }
+    //}
     async void ExploreNow_Clicked(System.Object sender, System.EventArgs e)
         => Application.Current.MainPage = new NavigationPage(new PlanetsPage());
 }
