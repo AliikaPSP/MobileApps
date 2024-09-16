@@ -12,7 +12,15 @@ public partial class PlanetsPage : ContentPage
 		InitializeComponent();
 	}
 
-	async void Planets_SelectionChanged(System.Object sender, Microsoft.Maui.Controls.SelectionChangedEventArgs e)
+    protected override void OnAppearing()
+    {
+        base.OnAppearing();
+
+        lstPopularPlanets.ItemsSource = PlanetsService.GetFeaturedPlanets();
+        lstAllPlanets.ItemsSource = PlanetsService.GetAllPlanets();
+    }
+
+    async void Planets_SelectionChanged(System.Object sender, Microsoft.Maui.Controls.SelectionChangedEventArgs e)
 	{
 		//await Navigation.PushAsync(new PlanetsDetailPage(e.CurrentSelection.First() as Planet));
 	}
