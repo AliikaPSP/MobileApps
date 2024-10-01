@@ -74,7 +74,6 @@
                                     CornerRadius="2"
                                     Command="{Binding Source={RelativeSource AncestorType={x:Type vm:ProductsViewModel}}, Path=DeleteProductCommand}"
                                     CommandParameter="{Binding Id}"/>
-
                         </Grid>
                     </DataTemplate>
                 </CollectionView.ItemTemplate>
@@ -91,7 +90,8 @@
                     </ContentView>
                 </CollectionView.EmptyView>
             </CollectionView>
-            <VerticalStackLayout>
+
+            <VerticalStackLayout Grid.Row="1">
                 <BoxView Color="{DynamicResource Primary}"
                          HeightRequest="1"/>
                 <Grid RowDefinitions="Auto, Auto"
@@ -103,17 +103,17 @@
                     <VerticalStackLayout Grid.Row="0"
                                          Grid.Column="0">
                         <Label Text="Name"/>
-                        <Entry Text="{Binding OperatingProduct.Name}"
+                        <Entry Text="{Binding OperatingProducts.Name}"
                                Placeholder="Product name"
                                Margin="0"
-                               BackgroundColor="#DAD1F9"/>
+                               BackgroundColor="#DAD1F9" />
                     </VerticalStackLayout>
 
                     <VerticalStackLayout Grid.Row="0"
-                                         Grid.Column="0">
+                                         Grid.Column="1">
                         <Label Text="Price"/>
-                        <Entry Text="{Binding OperatingProduct.Price}"
-                               Placeholder="Product price"
+                        <Entry Text="{Binding OperatingProducts.Price}"
+                               Placeholder="Product Price"
                                Margin="0"
                                BackgroundColor="#DAD1F9"
                                Keyboard="Numeric" />
@@ -139,5 +139,4 @@
             </VerticalStackLayout>
         </Grid>
     </Grid>
-
 </ContentPage>

@@ -74,7 +74,7 @@ namespace MauiCRUD.ViewModels
                 return;
 
             var (isValid, errorMessage) = OperatingProducts.Validate();
-            if (isValid)
+            if (!isValid)
             {
                 await Shell.Current.DisplayAlert("Validation Error", errorMessage, "Ok");
                 return;
